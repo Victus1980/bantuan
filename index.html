@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catatan sipil</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+      // Check if today's date is October 31st
+      function checkAccess() {
+    const today = new Date();
+    const month = today.getMonth(); // October is month 9 (0-indexed)
+    const day = today.getDate();
+    if (month !== 9 || day !== 31) {
+        document.body.innerHTML = `
+            <div style='display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f0f0f0;'>
+                <div style='text-align: center;'>
+                    <h1 style='color: #ff0000; font-size: 3em;'>Error 403 - Forbidden</h1>
+                    <p style='color: #333; font-size: 1.2em;'>Kamu hanya bisa akses web ini pada tanggal 31 Oktober</p>
+                    <p style='color: #666;'>Please check back on October 31st to access this page. Thank you for your understanding.</p>
+                    <img src='https://example.com/error-image.png' alt='Error Image' style='max-width: 100%; height: auto;'>
+                </div>
+            </div>`;
+    }
+}
+// Call checkAccess function on page load
+window.onload = checkAccess;
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide active" id="slide1">
+        <h1 class="fade-in">Hii, Happy Birthday yahh!🎉🎉</h1>
+        <p class="fade-in">Dear, Andini Amaliyah Lestari 🎂</p>
+        <p class="fade-in">
+          Baca sampai selesai yahh😇
+        </p>
+        <button onclick="nextSlide(2)">Next</button>
+        <div class="flowers"></div>
+      </div>
+      <div class="slide" id="slide2">
+        <p class="fade-in">
+          <p style="font-size: 20px; font-weight: bold; color: #e91e63; background-color: #fff0f6; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); text-align: left; line-height: 1.6; font-family: 'Courier New', Courier, monospace;">
+            Selamat ulang tahun! Birthday yang ke berapa nii??!! <br>
+            Terima kasih sudah berjuang selama ini, I’m so proud of you. <br>
+            Maafin dunia yang selalu jahat sama kamu, you deserve better than this. <br>
+            Dimana pun kamu berada jangan pernah lupa buat senyum ya, minimal senyum sehari lebih dari 5 kali yaa!? <br>
+            Inget ya anak baik, jangan lupa sayangin diri kamu sendiri sebelum sayang sama orang lain, okee!?? <br>
+            Utamain diri kamu dulu, gapapa kalo belum terbiasa tapi belajar pelan-pelan ya! <br>
+            Aku gak mau kamu terus-terusan utamain diri orang lain tapi diri kamu sendiri gak kamu perhatiin. <br>
+            Tetep jadi diri kamu sendiri ya, jangan pernah maksain buat sama kaya orang lain. <br>
+            Kamu ya kamu, gak bisa jadi orang lain. <br>
+            Aku gak maksa kamu jadi siapa-siapa, cukup jadi diri kamu sendiri. <br>
+            Aku gak akan protes kalo kamu gimana-gimana, jadi jangan selalu gak enakan sama aku ya. <br>
+            Sehat selalu! <br>
+            Sekali lagi, happy birthday yaa!
+        </p>
+        
+        </p>
+        <button onclick="nextSlide(3)">Next</button>
+        <div class="flowers"></div>
+      </div>
+      <div class="slide" id="slide3">
+        <p class="fade-in">
+          "Kemarin aku belum sempat <br>
+          kasih tau ini ke kamu!😅"<br>
+<br>
+          di baca yahh😊
+
+        </p>
+        <button onclick="nextSlide(4)">Next</button>
+        <div class="flowers"></div>
+      </div>
+      <div class="slide" id="slide4">
+        <p>
+          INGAT!!
+      </p>
+      
+
+         <p style="font-size: 24px; font-weight: bold; color: #e91e63; background-color: #fff0f6; padding: 10px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); text-align: center; line-height: 1.5; font-family: 'Poppins', sans-serif;">
+          "Kekhawatiran tidak menghilangkan <br> masalah di hari esok,<br> namun selalu menghilangkan kedamaian hari ini"
+          </p>
+          
+          
+        </p>
+        <button onclick="nextSlide(5)">Next</button>
+        <div class="flowers"></div>
+      </div>
+      <div class="slide" id="slide5">
+        <div class="input-container fade-in">
+          <label for="birthday">Enter your birthdate:</label>
+          <input type="date" id="birthday" name="birthday" />
+          <button onclick="calculateDays()">Calculate</button>
+        </div>
+        <p id="result" class="fade-in"></p>
+        <button onclick="nextSlide(6)">Next</button>
+        <div class="flowers"></div>
+      </div>
+      <div class="slide" id="slide6">
+        <p class="fade-in">Dari orang yang mencintaimu</p>
+        <p class="fade-in">A#</p>
+        <button onclick="previousSlide(5)">Previous</button>
+        <button onclick="nextSlide(7)">Next</button>
+        <div class="flowers"></div>
+      </div>
+      <div class="slide" id="slide7">
+        <h2 class="fade-in">
+          Terimakasih, karna sudah bertahan sampai saat ini!!🎈
+        </h2>
+        <p class="fade-in">
+          <p style="font-size: 22px; font-weight: bold; color: #2e8b57; background-color: #f0f8ff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); text-align: center; line-height: 1.6;">
+            "Masa depan adalah milik mereka yang percaya pada keindahan mimpi mereka." <br> - Eleanor Roosevelt
+        </p>
+        
+        </p>
+        <button onclick="previousSlide(6)">Previous</button>
+        <div class="flowers"></div>
+      </div>
+    </div>
+
+    <script>
+      let intervalId;
+
+      function nextSlide(slideNumber) {
+        document.querySelector(".slide.active").classList.remove("active");
+        document.getElementById("slide" + slideNumber).classList.add("active");
+
+        if (slideNumber === 5) {
+          clearInterval(intervalId);
+        } else if (slideNumber === 6) {
+          startClock();
+        }
+      }
+
+      function previousSlide(slideNumber) {
+        document.querySelector(".slide.active").classList.remove("active");
+        document.getElementById("slide" + slideNumber).classList.add("active");
+
+        if (slideNumber === 5) {
+          clearInterval(intervalId);
+        } else if (slideNumber === 6) {
+          startClock();
+        }
+      }
+
+      function calculateDays() {
+        const birthday = new Date(document.getElementById("birthday").value);
+        const today = new Date();
+        const diffTime = Math.abs(today - birthday);
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        const diffHours = Math.floor(
+          (diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const diffMinutes = Math.floor(
+          (diffTime % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const diffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
+
+        document.getElementById("result").innerText =
+          `You have been on this Earth for ${diffDays} days, ` +
+          `${diffHours} hours, ${diffMinutes} minutes, and ${diffSeconds} seconds!`;
+
+        startClock(birthday);
+      }
+
+      function startClock(birthday) {
+        intervalId = setInterval(() => {
+          const today = new Date();
+          const diffTime = Math.abs(today - birthday);
+          const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+          const diffHours = Math.floor(
+            (diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const diffMinutes = Math.floor(
+            (diffTime % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const diffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
+
+          document.getElementById("result").innerText =
+            `You have been on this Earth for ${diffDays} days, ` +
+            `${diffHours} hours, ${diffMinutes} minutes, and ${diffSeconds} seconds!`;
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
