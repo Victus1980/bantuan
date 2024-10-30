@@ -9,24 +9,24 @@
 
     <script>
       // Check if today's date is October 31st
-      function checkAccess() {
-    const today = new Date();
-    const month = today.getMonth(); // October is month 9 (0-indexed)
-    const day = today.getDate();
-    if (month !== 9 || day !== 31) {
-        document.body.innerHTML = `
-            <div style='display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f0f0f0;'>
-                <div style='text-align: center;'>
-                    <h1 style='color: #ff0000; font-size: 3em;'>Error 403 - Forbidden</h1>
-                    <p style='color: #333; font-size: 1.2em;'>Kamu hanya bisa akses web ini pada tanggal 31 Oktober</p>
-                    <p style='color: #666;'>Please check back on October 31st to access this page. Thank you for your understanding.</p>
-                    <img src='https://example.com/error-image.png' alt='Error Image' style='max-width: 100%; height: auto;'>
-                </div>
-            </div>`;
-    }
-}
-// Call checkAccess function on page load
-window.onload = checkAccess;
+//       function checkAccess() {
+//     const today = new Date();
+//     const month = today.getMonth(); // October is month 9 (0-indexed)
+//     const day = today.getDate();
+//     if (month !== 9 || day !== 31) {
+//         document.body.innerHTML = `
+//             <div style='display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f0f0f0;'>
+//                 <div style='text-align: center;'>
+//                     <h1 style='color: #ff0000; font-size: 3em;'>Error 403 - Forbidden</h1>
+//                     <p style='color: #333; font-size: 1.2em;'>Kamu hanya bisa akses web ini pada tanggal 31 Oktober</p>
+//                     <p style='color: #666;'>Please check back on October 31st to access this page. Thank you for your understanding.</p>
+//                     <img src='https://example.com/error-image.png' alt='Error Image' style='max-width: 100%; height: auto;'>
+//                 </div>
+//             </div>`;
+//     }
+// }
+// // Call checkAccess function on page load
+// window.onload = checkAccess;
 
     </script>
   </head>
